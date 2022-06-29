@@ -1,11 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular-devkit/core");
+import { logging } from '@angular-devkit/core';
 /**
  * TestLogger stores all log entries and has some tests to check logs.
  * (a helper class for testing)
  */
-class TestLogger extends core_1.logging.Logger {
+export class TestLogger extends logging.Logger {
     constructor(name, parent) {
         super(name, parent);
         this.debugEnabled = false;
@@ -30,5 +28,4 @@ class TestLogger extends core_1.logging.Logger {
         return this.logs.findIndex(msg => re.test(msg)) >= 0;
     }
 }
-exports.TestLogger = TestLogger;
 //# sourceMappingURL=testlogger_spec.js.map
