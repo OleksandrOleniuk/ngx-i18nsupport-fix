@@ -1,5 +1,6 @@
 {
   "extends": "../../tsconfig.lib.json",
+  "type": "module",
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "../../../../dist/tooling/src/builders",
@@ -7,7 +8,7 @@
       "es2017",
       "dom"
     ],
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
