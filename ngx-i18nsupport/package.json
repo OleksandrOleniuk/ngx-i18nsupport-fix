@@ -1,5 +1,6 @@
 {
   "name": "@ngx-i18nsupport/ngx-i18nsupport",
+  "type": "module",
   "version": "1.1.6",
   "description": "Some tooling to be used with the Angular i18n workflow",
   "private": false,

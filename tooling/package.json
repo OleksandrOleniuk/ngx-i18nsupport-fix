@@ -1,5 +1,6 @@
 {
   "name": "@ngx-i18nsupport/tooling",
+  "type": "module",
   "version": "8.0.3",
   "private": false,
   "description": "Schematics to add the tooling to be used with the Angular 2 i18n workflow",

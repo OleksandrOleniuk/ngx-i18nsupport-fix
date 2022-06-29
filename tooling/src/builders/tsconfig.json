@@ -1,6 +1,5 @@
 {
   "extends": "../../tsconfig.lib.json",
-  "type": "module",
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "../../../../dist/tooling/src/builders",
