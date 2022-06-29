@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "SchematicsForNgAdd",
+  "$id": "SchematicsForNgAdd",
   "title": "NgAdd Schema",
   "type": "object",
   "properties": {

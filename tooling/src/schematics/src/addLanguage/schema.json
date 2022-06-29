@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "SchematicsForAddLanguage",
+  "$id": "SchematicsForAddLanguage",
   "title": "addLanguage Schema",
   "type": "object",
   "properties": {
