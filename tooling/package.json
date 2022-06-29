@@ -1,0 +1,46 @@
+{
+  "name": "@ngx-i18nsupport/tooling",
+  "version": "8.0.3",
+  "private": false,
+  "description": "Schematics to add the tooling to be used with the Angular 2 i18n workflow",
+  "schematics": "./src/schematics/src/collection.json",
+  "ng-update": {
+    "migrations": "./src/schematics/src/migration-collection.json"
+  },
+  "builders": "./src/builders/src/builders.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinroob/ngx-i18nsupport.git"
+  },
+  "keywords": [
+    "i18n",
+    "tooling",
+    "angular",
+    "xliff",
+    "xmb"
+  ],
+  "author": "Martin Roob <martinroob65@gmail.com> (www.roobsoft.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinroob/ngx-i18nsupport/issues"
+  },
+  "homepage": "https://github.com/martinroob/ngx-i18nsupport#readme",
+  "dependencies": {
+    "@ngx-i18nsupport/ngx-i18nsupport": "^1.1.6",
+    "tslib": "^1.9.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0"
+  },
+  "main": "bundles/ngx-i18nsupport-tooling.umd.js",
+  "module": "fesm5/ngx-i18nsupport-tooling.js",
+  "es2015": "fesm2015/ngx-i18nsupport-tooling.js",
+  "esm5": "esm5/ngx-i18nsupport-tooling.js",
+  "esm2015": "esm2015/ngx-i18nsupport-tooling.js",
+  "fesm5": "fesm5/ngx-i18nsupport-tooling.js",
+  "fesm2015": "fesm2015/ngx-i18nsupport-tooling.js",
+  "typings": "ngx-i18nsupport-tooling.d.ts",
+  "metadata": "ngx-i18nsupport-tooling.metadata.json",
+  "sideEffects": false
+}

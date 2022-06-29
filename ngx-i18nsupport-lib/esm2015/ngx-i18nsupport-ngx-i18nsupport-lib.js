@@ -1,0 +1,9 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { NgxI18nsupportLibModule, TranslationMessagesFileFactory, FORMAT_XLIFF12, FORMAT_XLIFF20, FORMAT_XMB, FORMAT_XTB, FILETYPE_XLIFF12, FILETYPE_XLIFF20, FILETYPE_XMB, FILETYPE_XTB, STATE_NEW, STATE_TRANSLATED, STATE_FINAL, NORMALIZATION_FORMAT_DEFAULT, NORMALIZATION_FORMAT_NGXTRANSLATE } from './public_api';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LWkxOG5zdXBwb3J0LW5neC1pMThuc3VwcG9ydC1saWIuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9Abmd4LWkxOG5zdXBwb3J0L25neC1pMThuc3VwcG9ydC1saWIvIiwic291cmNlcyI6WyJuZ3gtaTE4bnN1cHBvcnQtbmd4LWkxOG5zdXBwb3J0LWxpYi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsMlNBQWMsY0FBYyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpY19hcGknO1xuIl19
