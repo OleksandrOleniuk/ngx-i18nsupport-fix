@@ -1,26 +1,24 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const tslib_1 = require("tslib");
-const core_1 = require("@angular-devkit/core");
-const testing_1 = require("@angular-devkit/architect/testing");
-const node_1 = require("@angular-devkit/architect/node");
-const architect_1 = require("@angular-devkit/architect");
+import * as tslib_1 from "tslib";
+import { experimental, getSystemPath, join, normalize, schema } from '@angular-devkit/core';
+import { TestingArchitectHost, TestProjectHost } from '@angular-devkit/architect/testing';
+import { WorkspaceNodeModulesArchitectHost } from '@angular-devkit/architect/node';
+import { Architect } from '@angular-devkit/architect';
 /**
  * We are using a test workspace from the test folder.
  * In this workspace the xliffmerge builder is already configured.
  */
-const ngxi18nsupportRoot = core_1.normalize(core_1.join(core_1.normalize(__dirname), '../../../..'));
-exports.workspaceRoot = core_1.join(ngxi18nsupportRoot, 'src/builders/test/hello-world-app/');
-exports.host = new testing_1.TestProjectHost(exports.workspaceRoot);
-exports.outputPath = core_1.normalize('dist');
-function createArchitect(wsRoot) {
+const ngxi18nsupportRoot = normalize(join(normalize(__dirname), '../../../..'));
+export const workspaceRoot = join(ngxi18nsupportRoot, 'src/builders/test/hello-world-app/');
+export const host = new TestProjectHost(workspaceRoot);
+export const outputPath = normalize('dist');
+export function createArchitect(wsRoot) {
     return tslib_1.__awaiter(this, void 0, void 0, function* () {
-        const registry = new core_1.schema.CoreSchemaRegistry();
-        registry.addPostTransform(core_1.schema.transforms.addUndefinedDefaults);
-        const workspaceSysPath = core_1.getSystemPath(wsRoot);
-        const workspace = yield core_1.experimental.workspace.Workspace.fromPath(exports.host, exports.host.root(), registry);
-        const architectHost = new testing_1.TestingArchitectHost(workspaceSysPath, workspaceSysPath, new node_1.WorkspaceNodeModulesArchitectHost(workspace, workspaceSysPath));
-        const architect = new architect_1.Architect(architectHost, registry);
+        const registry = new schema.CoreSchemaRegistry();
+        registry.addPostTransform(schema.transforms.addUndefinedDefaults);
+        const workspaceSysPath = getSystemPath(wsRoot);
+        const workspace = yield experimental.workspace.Workspace.fromPath(host, host.root(), registry);
+        const architectHost = new TestingArchitectHost(workspaceSysPath, workspaceSysPath, new WorkspaceNodeModulesArchitectHost(workspace, workspaceSysPath));
+        const architect = new Architect(architectHost, registry);
         return {
             workspace,
             architectHost: architectHost,
@@ -28,5 +26,4 @@ function createArchitect(wsRoot) {
         };
     });
 }
-exports.createArchitect = createArchitect;
 //# sourceMappingURL=testing_utils.js.map
