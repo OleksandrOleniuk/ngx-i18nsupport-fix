@@ -7,7 +7,7 @@
       "es2017",
       "dom"
     ],
-    "module": "ESNext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "declaration": true,
     "noEmitOnError": true,
@@ -20,7 +20,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "target": "ESNext",
+    "target": "es6",
     "types": [
       "jasmine",
       "node"
