@@ -1,6 +1,5 @@
 {
   "name": "@ngx-i18nsupport/ngx-i18nsupport-lib",
-  "type": "module",
   "version": "1.12.1",
   "description": "A Typescript library to work with Angular generated i18n files (xliff, xmb)",
   "private": false,
